@@ -5,4 +5,8 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/ilovezhuip.io/',
   plugins: [vue()],
+  build: {
+    outDir: 'docs',
+    emptyOutDir: true, // build时清空输出目录
+  }
 })
